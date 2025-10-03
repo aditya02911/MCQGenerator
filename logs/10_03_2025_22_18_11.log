@@ -1,0 +1,60 @@
+[2025-10-03 22:18:11,747] 76 root - ERROR - Error during MCQ generation
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 38, in read_file
+    raise Exception(
+Exception: PDF has no extractable text. It may be a scanned/image-based PDF. Use OCR to convert it to text or upload a .txt file.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/streamlitAPP.py", line 33, in <module>
+    text = read_file(uploaded_file)
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 46, in read_file
+    raise Exception("error reading the PDF file") from e
+Exception: error reading the PDF file
+[2025-10-03 22:18:13,267] 76 root - ERROR - Error during MCQ generation
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 38, in read_file
+    raise Exception(
+Exception: PDF has no extractable text. It may be a scanned/image-based PDF. Use OCR to convert it to text or upload a .txt file.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/streamlitAPP.py", line 33, in <module>
+    text = read_file(uploaded_file)
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 46, in read_file
+    raise Exception("error reading the PDF file") from e
+Exception: error reading the PDF file
+[2025-10-03 22:19:01,896] 76 root - ERROR - Error during MCQ generation
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/streamlitAPP.py", line 45, in <module>
+    result = generate_evaluate_chain(inputs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/sequential.py", line 107, in _call
+    outputs = chain(known_values, return_only_outputs=True, callbacks=callbacks)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/_api/deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 410, in __call__
+    return self.invoke(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 165, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/llm.py", line 127, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/llm.py", line 139, in generate
+    return self.llm.generate_prompt(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 870, in generate
+    run_infos.append(RunInfo(run_id=manager.run_id))
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RunInfo
+run_id
+  UUID input should be a string, bytes or UUID object [type=uuid_type, input_value=UUID('9aca00e8-a77e-4e6c-9d6f-27f10a2aacc1'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.11/v/uuid_type

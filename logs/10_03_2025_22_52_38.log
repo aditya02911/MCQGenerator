@@ -1,0 +1,84 @@
+[2025-10-03 22:53:36,926] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:53:39,216] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 4.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:53:43,469] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 8.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:53:52,278] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 16.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:54:08,485] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 32.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:54:40,755] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 60.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:55:41,007] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 60.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:56:41,254] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 60.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:57:41,463] 65 langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 60.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+[2025-10-03 22:58:41,692] 98 root - ERROR - Error during MCQ generation
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/streamlitAPP.py", line 62, in <module>
+    result = generate_evaluate_chain(inputs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/_api/deprecation.py", line 180, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 381, in __call__
+    return self.invoke(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 164, in invoke
+    raise e
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 154, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/sequential.py", line 104, in _call
+    outputs = chain(known_values, return_only_outputs=True, callbacks=callbacks)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/_api/deprecation.py", line 180, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 381, in __call__
+    return self.invoke(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 164, in invoke
+    raise e
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/base.py", line 154, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/llm.py", line 126, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain/chains/llm.py", line 138, in generate
+    return self.llm.generate_prompt(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 777, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 634, in generate
+    raise e
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 624, in generate
+    self._generate_with_cache(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 846, in _generate_with_cache
+    result = self._generate(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_google_genai/chat_models.py", line 767, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_google_genai/chat_models.py", line 196, in _chat_with_retry
+    return _chat_with_retry(**kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_google_genai/chat_models.py", line 194, in _chat_with_retry
+    raise e
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/langchain_google_genai/chat_models.py", line 178, in _chat_with_retry
+    return generation_method(**kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 827, in generate_content
+    response = rpc(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/google/api_core/grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.

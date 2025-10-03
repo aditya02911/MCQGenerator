@@ -1,0 +1,28 @@
+[2025-10-03 22:08:26,032] 76 root - ERROR - Error during MCQ generation
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 13, in read_file
+    page_text = page.extract_text() or ""
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/PyPDF2/_page.py", line 1851, in extract_text
+    return self._extract_text(
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/PyPDF2/_page.py", line 1356, in _extract_text
+    content = ContentStream(content, pdf, "bytes")
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/PyPDF2/generic/_data_structures.py", line 877, in __init__
+    self.__parse_content_stream(stream_bytes)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/PyPDF2/generic/_data_structures.py", line 943, in __parse_content_stream
+    operands.append(read_object(stream, None, self.forced_encoding))
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/PyPDF2/generic/_data_structures.py", line 1049, in read_object
+    return ArrayObject.read_from_stream(stream, pdf, forced_encoding)
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/PyPDF2/generic/_data_structures.py", line 150, in read_from_stream
+    arr.append(read_object(stream, pdf, forced_encoding))
+  File "/Users/adityaalok/Desktop/MCQGenerator/env/lib/python3.10/site-packages/PyPDF2/generic/_data_structures.py", line 1080, in read_object
+    raise PdfReadError(
+PyPDF2.errors.PdfReadError: Invalid Elementary Object starting with b'\x00' @549: b'C\x00o\x00m\x00p\x00l\x00e\x00t\x00e\x00d\x00 )\x00 -227\x00 (\x004\x00-\x00w\x00e\x00e\x00k\x00 )\x00 -227\x00 (\x00v\x00i\x00r\x00t\x00u\x00a\x00l\x00 )\x00 -227\x00 (\x00'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/streamlitAPP.py", line 33, in <module>
+    text = read_file(uploaded_file)
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 21, in read_file
+    raise Exception("error reading the PDF file") from e
+Exception: error reading the PDF file

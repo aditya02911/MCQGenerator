@@ -1,0 +1,28 @@
+[2025-10-03 22:09:23,722] 76 root - ERROR - Error during MCQ generation
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 21, in read_file
+    raise Exception("no extractable text found in PDF")
+Exception: no extractable text found in PDF
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/streamlitAPP.py", line 33, in <module>
+    text = read_file(uploaded_file)
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 26, in read_file
+    raise Exception("error reading the PDF file") from e
+Exception: error reading the PDF file
+[2025-10-03 22:15:08,748] 76 root - ERROR - Error during MCQ generation
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 21, in read_file
+    raise Exception("no extractable text found in PDF")
+Exception: no extractable text found in PDF
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/adityaalok/Desktop/MCQGenerator/streamlitAPP.py", line 33, in <module>
+    text = read_file(uploaded_file)
+  File "/Users/adityaalok/Desktop/MCQGenerator/src/mcqgenerator/utils.py", line 26, in read_file
+    raise Exception("error reading the PDF file") from e
+Exception: error reading the PDF file
