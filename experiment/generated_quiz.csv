@@ -1,0 +1,6 @@
+MCQ,Choices,Correct
+"The early development of machine learning was inspired by human biology. According to the text, which psychologist introduced a theory about how interactions between nerve cells could form a basis for learning?",a: Arthur Samuel | b: Walter Pitts | c: Donald Hebb | d: Tom M. Mitchell,c
+An early 'learning machine' called Cybertron was developed in the 1960s. Which of the following biological patterns was it trained to analyze?,a: DNA sequences | b: Electrocardiograms | c: Cell division rates | d: Brain wave patterns,b
+"According to the formal definition by Tom M. Mitchell, a computer program is said to learn if its performance at a task improves with what?",a: More complex algorithms | b: Faster computer hardware | c: Human guidance | d: Experience,d
+The text states that machine learning originally grew out of the quest for a broader field. What was that field?,a: Statistics | b: Artificial intelligence (AI) | c: Information retrieval | d: Computer gaming,b
+Modern machine learning is divided into three main algorithm types. Which of the following is NOT one of the three types mentioned in the text?,a: Supervised Learning | b: Reinforcement Learning | c: Symbolic Learning | d: Unsupervised Learning,c
