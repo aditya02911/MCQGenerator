@@ -1,0 +1,17 @@
+# Core LLM and LangChain
+langchain
+google-generativeai
+langchain-community
+langchain-google-genai
+
+# Web UI
+streamlit
+
+# Env variables(key value pair)
+python-dotenv
+
+# File handling
+PyPDF2
+
+
+-e .
